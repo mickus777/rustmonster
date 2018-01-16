@@ -18,7 +18,7 @@ class TestJSonReader(unittest.TestCase):
         self.assertEqual(expected, result)
 
     def test_complex_json(self):
-        json = """{
+        json = u"""{
                     "id": "0001",
                     "type": "donut",
                     "name": "Cake",
