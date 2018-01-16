@@ -63,8 +63,8 @@ class TestCSVReader(unittest.TestCase):
         csv = u"tag_name;tag_type;tag_value;name;age;city\n" \
               u"ROOT;object;;\"John\";;\n" \
               u"ROOT.cities;list;;;;\n" \
-              u"ROOT.cities.city;object;;;29;\"Philadelphia\"\n" \
-              u"ROOT.cities.city;object;;;31;\"New York\"\n"
+              u"ROOT.cities.cities_item;object;;;29;\"Philadelphia\"\n" \
+              u"ROOT.cities.cities_item;object;;;31;\"New York\"\n"
 
         expected = {u"name": u"John",
                     u"cities": [{u"age": 29, u"city": u"Philadelphia"},
@@ -78,8 +78,8 @@ class TestCSVReader(unittest.TestCase):
         csv = u"tag_name;tag_type;tag_value;name;age\n" \
               u"ROOT;object;;\"John\";31\n" \
               u"ROOT.cities;list;;;\n" \
-              u"ROOT.cities.city;value;\"New York\";;\n" \
-              u"ROOT.cities.city;value;\"Philadelphia\";;\n"
+              u"ROOT.cities.cities_item;value;\"New York\";;\n" \
+              u"ROOT.cities.cities_item;value;\"Philadelphia\";;\n"
 
         expected = {u"name": u"John",
                     u"age": 31,
@@ -95,18 +95,18 @@ class TestCSVReader(unittest.TestCase):
               u"ROOT;object;;\"0001\";\"donut\";\"Cake\";0.55\n" \
               u"ROOT.batters;object;;;;;\n" \
               u"ROOT.batters.batter;list;;;;;;\n" \
-              u"ROOT.batters.batter.batter;object;;\"1001\";\"Regular\";;\n" \
-              u"ROOT.batters.batter.batter;object;;\"1002\";\"Chocolate\";;\n" \
-              u"ROOT.batters.batter.batter;object;;\"1003\";\"Blueberry\";;\n" \
-              u"ROOT.batters.batter.batter;object;;\"1004\";\"Devil's Food\";;\n" \
+              u"ROOT.batters.batter.batter_item;object;;\"1001\";\"Regular\";;\n" \
+              u"ROOT.batters.batter.batter_item;object;;\"1002\";\"Chocolate\";;\n" \
+              u"ROOT.batters.batter.batter_item;object;;\"1003\";\"Blueberry\";;\n" \
+              u"ROOT.batters.batter.batter_item;object;;\"1004\";\"Devil's Food\";;\n" \
               u"ROOT.topping;list;;;;;\n" \
-              u"ROOT.topping.topping;object;;\"5001\";\"None\";;\n" \
-              u"ROOT.topping.topping;object;;\"5002\";\"Glazed\";;\n" \
-              u"ROOT.topping.topping;object;;\"5005\";\"Sugar\";;\n" \
-              u"ROOT.topping.topping;object;;\"5007\";\"Powdered Sugar\";;\n" \
-              u"ROOT.topping.topping;object;;\"5006\";\"Chocolate with Sprinkles\";;\n" \
-              u"ROOT.topping.topping;object;;\"5003\";\"Chocolate\";;\n" \
-              u"ROOT.topping.topping;object;;\"5004\";\"Maple\";;\n"
+              u"ROOT.topping.topping_item;object;;\"5001\";\"None\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5002\";\"Glazed\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5005\";\"Sugar\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5007\";\"Powdered Sugar\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5006\";\"Chocolate with Sprinkles\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5003\";\"Chocolate\";;\n" \
+              u"ROOT.topping.topping_item;object;;\"5004\";\"Maple\";;\n"
 
         expected = {u"id": u"0001",
                     u"type": u"donut",
