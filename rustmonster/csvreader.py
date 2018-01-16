@@ -16,11 +16,14 @@ class CSVReader:
         else:
             return self.read_value(values[2]), index + 1
 
+    def escape_text(self, text):
+        return text.replace(u"%3B", u";").replace(u"%25", u"%")
+
     def read_value(self, text):
         if len(text) == 0:
             return None
         elif text.startswith(u'"'):
-            return text[1:-1]
+            return self.escape_text(text[1:-1])
         elif text.isnumeric():
             return int(text)
         elif isfloat(text):

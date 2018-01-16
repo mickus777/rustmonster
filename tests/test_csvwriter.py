@@ -32,6 +32,18 @@ class TestCSVWriter(unittest.TestCase):
 
         self.assertEqual(csv, result)
 
+    def test_csv_with_semicolon(self):
+        data = {u"name": u"John",
+                u"age": 31,
+                u"city": u"New;York"}
+
+        csv = u"tag_name;tag_type;tag_value;city;age;name\n" \
+              u"ROOT;object;;\"New%3BYork\";31;\"John\""
+
+        result = CSVWriter().write(data)
+
+        self.assertEqual(csv, result)
+
     def test_csv_with_object(self):
         data = {u"name": u"John",
                 u"age": 31,

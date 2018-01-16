@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csvreader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="csvreader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csvreader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="198">
+              <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
       <file leaf-file-name="test_csvreader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tests/test_csvreader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="125" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -90,8 +90,8 @@
       <file leaf-file-name="csvwriter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csvwriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="538">
+              <caret line="77" column="63" lean-forward="true" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -100,8 +100,8 @@
       <file leaf-file-name="test_csvwriter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tests/test_csvwriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -109,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_integration.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_integration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tests/test_integration.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -148,12 +148,12 @@
         <option value="$PROJECT_DIR$/jsonwriter.py" />
         <option value="$PROJECT_DIR$/../tests/test_jsonwriter.py" />
         <option value="$PROJECT_DIR$/venv/csvreader.py" />
-        <option value="$PROJECT_DIR$/csvreader.py" />
         <option value="$PROJECT_DIR$/writer.py" />
-        <option value="$PROJECT_DIR$/../tests/test_csvreader.py" />
-        <option value="$PROJECT_DIR$/csvwriter.py" />
-        <option value="$PROJECT_DIR$/../tests/test_csvwriter.py" />
         <option value="$PROJECT_DIR$/../tests/test_integration.py" />
+        <option value="$PROJECT_DIR$/../tests/test_csvreader.py" />
+        <option value="$PROJECT_DIR$/../tests/test_csvwriter.py" />
+        <option value="$PROJECT_DIR$/csvwriter.py" />
+        <option value="$PROJECT_DIR$/csvreader.py" />
       </list>
     </option>
   </component>
@@ -322,46 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csvreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csvwriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tests/test_csvreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="125" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../tests/test_jsonreader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="46" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tests/test_csvwriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -375,6 +339,42 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tests/test_csvreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tests/test_csvwriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csvwriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="77" column="63" lean-forward="true" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csvreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

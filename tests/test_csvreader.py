@@ -32,6 +32,18 @@ class TestCSVReader(unittest.TestCase):
 
         self.assertEqual(expected, result)
 
+    def test_csv_with_semicolon(self):
+        csv = u"tag_name;tag_type;tag_value;name;age;city\n" \
+              u"ROOT;object;;\"John\";31;\"New%3BYork\""
+
+        expected = {u"name": u"John",
+                    u"age": 31,
+                    u"city": u"New;York"}
+
+        result = CSVReader().read(csv)
+
+        self.assertEqual(expected, result)
+
     def test_csv_with_object(self):
         csv = u"tag_name;tag_type;tag_value;name;age;city\n" \
               u"ROOT;object;;\"John\";31;\n" \

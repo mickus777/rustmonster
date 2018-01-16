@@ -74,11 +74,14 @@ class CSVWriter:
 
         return lines
 
+    def escape_text(self, text):
+        return text.replace(u"%", u"%25").replace(u";", u"%3B")
+
     def escape_value(self, value):
         if value is None:
             return unicode()
         elif type(value) is unicode:
-            return u"\"" + value + u"\""
+            return u"\"" + self.escape_text(value) + u"\""
         else:
             return unicode(value)
 
